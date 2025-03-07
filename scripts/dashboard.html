@@ -1,3 +1,49 @@
+
+
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logowanie</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        .container { width: 300px; margin: 50px auto; }
+        input { width: 100%; margin: 10px 0; padding: 8px; }
+        button { padding: 10px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Zaloguj się</h2>
+        <input type="text" id="username" placeholder="Nazwa użytkownika">
+        <input type="password" id="password" placeholder="Hasło">
+        <button id="login-btn">Zaloguj</button>
+    </div>
+
+    <script>
+        document.getElementById("login-btn").addEventListener("click", function() {
+            var username = document.getElementById("username").value.trim();
+            var password = document.getElementById("password").value.trim();
+
+            // Przykładowe dane do logowania (możesz dodać backend do obsługi prawdziwego logowania)
+            if (username === "admin" && password === "1234") {
+                alert("Logowanie udane!");
+                window.location.href = "dashboard.html"; // Przekierowanie na kolejną stronę
+            } else {
+                alert("Niepoprawne dane logowania!");
+            }
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
 <html><head>
     <script src="../sw.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
