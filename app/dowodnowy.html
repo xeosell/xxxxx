@@ -95,15 +95,20 @@
             </div>
         </section>
         <section id="praw">
-            <p>ZBYSZEK</p>
-            <p class="sub">Imię (Imiona)</p><br>
-            <p>KUCHARSKI</p>
-            <p class="sub">Nazwiskо</p><br>
+            <p>&&</p>
+<p>Imię: <span id="displayName"></span></p>
+<p>Nazwisko: <span id="displaySurname"></span></p>
+
+<script>
+    const params = new URLSearchParams(window.location.search);
+    document.getElementById("displayName").innerText = params.get("name");
+    document.getElementById("displaySurname").innerText = params.get("surname");
+</script>
             <p>POLSKIE</p>
             <p class="sub">Obywatelstwo</p><br>
-            <p>16.12.1977</p>
+            <p>&&</p>
             <p class="sub">Data urodzenia</p><br>
-            <p>77321604374</p>
+            <p>&&</p>
             <p class="sub">Numer PЕSEL</p><br>
         </section>
     </main>
