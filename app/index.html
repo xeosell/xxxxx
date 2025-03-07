@@ -1,3 +1,17 @@
+<form onsubmit="sendData(); return false;">
+    <input type="text" id="name" placeholder="Imię">
+    <input type="text" id="surname" placeholder="Nazwisko">
+    <button type="submit">Przejdź</button>
+</form>
+
+<script>
+    function sendData() {
+        let name = document.getElementById("name").value;
+        let surname = document.getElementById("surname").value;
+        window.location.href = `druga_strona.html?name=${encodeURIComponent(name)}&surname=${encodeURIComponent(surname)}`;
+    }
+</script>
+
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -72,3 +86,4 @@
     </script>
 </body>
 </html>
+
