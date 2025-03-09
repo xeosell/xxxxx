@@ -117,23 +117,23 @@
             
             <if (firstnameElem) {>
                 <firstnameElem.innerHTML = firstname ? firstname.toUpperCase() : "TEST";>
-                <}>
+                }
             
             <if (surnameElem) {>
                 <surnameElem.innerHTML = surname ? surname.toUpperCase() : "TEST";>
-                <}>
+                }
             
-            < if (peselElem) {>
+             if (peselElem) {
                 <peselElem.innerHTML = pesel || "06261114915";>
-                <}>
+            <}
             
             <if (urodzinElem) {>
                 <urodzinElem.innerHTML = urodzin || "14.09.2006";>
-                <}>
+                }
             
             <if (imageElem) {>
                 <imageElem.style.backgroundImage = image ? "url('" + image + "')" : "none";>
-            <}>
+            }
         </section>
     </main>
     <section id="bottom">
